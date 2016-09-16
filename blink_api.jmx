@@ -113,6 +113,11 @@
               <stringProp name="Argument.value">2016-08-31</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
+            <elementProp name="apk_filepath" elementType="Argument">
+              <stringProp name="Argument.name">apk_filepath</stringProp>
+              <stringProp name="Argument.value">${__BeanShell(import org.apache.jmeter.services.FileServer; FileServer.getFileServer().getBaseDir();)}${__BeanShell(File.separator,)}app-claro-debug-1.5.5.apk </stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
           </collectionProp>
         </Arguments>
         <hashTree/>
@@ -1032,7 +1037,7 @@ else
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Executar Task (1 aparelho)" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Executar Task (1 aparelho)" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="apiKey" elementType="HTTPArgument">
@@ -1084,7 +1089,7 @@ else
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Executar Task (4 aparelhos)" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Executar Task (4 aparelhos)" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="apiKey" elementType="HTTPArgument">
@@ -1136,11 +1141,11 @@ else
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Upload App Android (1 aparelho)" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Upload App Android (1 aparelho)" enabled="true">
           <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
             <collectionProp name="HTTPFileArgs.files">
-              <elementProp name="C:\Users\Gustavo Almeida\Downloads\app-claro-debug-1.5.5.apk" elementType="HTTPFileArg">
-                <stringProp name="File.path">C:\Users\Gustavo Almeida\Downloads\app-claro-debug-1.5.5.apk</stringProp>
+              <elementProp name="${apk_filepath}" elementType="HTTPFileArg">
+                <stringProp name="File.path">${apk_filepath}</stringProp>
                 <stringProp name="File.paramname">file</stringProp>
                 <stringProp name="File.mimetype">application/vnd.android.package-archive</stringProp>
               </elementProp>
@@ -1211,11 +1216,11 @@ else
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Upload App Android (4 aparelhos)" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Upload App Android (4 aparelhos)" enabled="true">
           <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
             <collectionProp name="HTTPFileArgs.files">
-              <elementProp name="C:\Users\Gustavo Almeida\Downloads\app-claro-debug-1.5.5.apk" elementType="HTTPFileArg">
-                <stringProp name="File.path">C:\Users\Gustavo Almeida\Downloads\app-claro-debug-1.5.5.apk</stringProp>
+              <elementProp name="${apk_filepath}" elementType="HTTPFileArg">
+                <stringProp name="File.path">${apk_filepath}</stringProp>
                 <stringProp name="File.paramname">file</stringProp>
                 <stringProp name="File.mimetype">application/vnd.android.package-archive</stringProp>
               </elementProp>
