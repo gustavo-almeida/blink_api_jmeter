@@ -59,24 +59,25 @@
             </elementProp>
             <elementProp name="success_task_id" elementType="Argument">
               <stringProp name="Argument.name">success_task_id</stringProp>
-              <stringProp name="Argument.value">577bd60c75433e1ab341c003</stringProp>
+              <stringProp name="Argument.value">57fcf88861b2d8f37744f0ce</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="fail_task_id" elementType="Argument">
               <stringProp name="Argument.name">fail_task_id</stringProp>
-              <stringProp name="Argument.value">577bd60c75433e1ab341c005</stringProp>
+              <stringProp name="Argument.value">57fcfe0c61b2d8f37744f129</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="test_suite_id" elementType="Argument">
               <stringProp name="Argument.name">test_suite_id</stringProp>
-              <stringProp name="Argument.value">57990f78c9b3fff7980bdbc1</stringProp>
+              <stringProp name="Argument.value">57e5983c5dda089cf3732e68</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">Escrever produtos fake</stringProp>
             </elementProp>
             <elementProp name="test_suite_2_id" elementType="Argument">
               <stringProp name="Argument.name">test_suite_2_id</stringProp>
-              <stringProp name="Argument.value">57acd34a17082ae74c76f5c1</stringProp>
+              <stringProp name="Argument.value">57eab1cf870c495775c12ee3</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
-              <stringProp name="Argument.desc">Olimpiadas 2</stringProp>
+              <stringProp name="Argument.desc">Escrever massa gigante 2</stringProp>
             </elementProp>
             <elementProp name="galaxy_s3_id" elementType="Argument">
               <stringProp name="Argument.name">galaxy_s3_id</stringProp>
@@ -103,14 +104,19 @@
               <stringProp name="Argument.value">55f954933e142bf828bbcec5</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
+            <elementProp name="galaxy_note_2_id" elementType="Argument">
+              <stringProp name="Argument.name">galaxy_note_2_id</stringProp>
+              <stringProp name="Argument.value">55a6a3ba4047d48f33a21ca4</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
             <elementProp name="start_date" elementType="Argument">
               <stringProp name="Argument.name">start_date</stringProp>
-              <stringProp name="Argument.value">2016-08-01</stringProp>
+              <stringProp name="Argument.value">2016-10-01</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="end_date" elementType="Argument">
               <stringProp name="Argument.name">end_date</stringProp>
-              <stringProp name="Argument.value">2016-08-31</stringProp>
+              <stringProp name="Argument.value">2016-10-31</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="apk_filepath" elementType="Argument">
@@ -453,7 +459,7 @@ else
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/api/reports/overviewByDevice/${blink_apikey}?deviceId=${razr_d1_id}</stringProp>
+          <stringProp name="HTTPSampler.path">/api/reports/overviewByDevice/${blink_apikey}/${razr_d1_id}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -484,7 +490,7 @@ else
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/api/reports/overviewByDevice/${blink_apikey}?deviceId=${razr_d1_id}?startDate=${start_date}</stringProp>
+          <stringProp name="HTTPSampler.path">/api/reports/overviewByDevice/${blink_apikey}/${razr_d1_id}?startDate=${start_date}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -515,7 +521,7 @@ else
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/api/reports/overviewByDevice/${blink_apikey}?deviceId=${razr_d1_id}?startDate=${start_date}&amp;endDate=${end_date}</stringProp>
+          <stringProp name="HTTPSampler.path">/api/reports/overviewByDevice/${blink_apikey}/${razr_d1_id}?startDate=${start_date}&amp;endDate=${end_date}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -546,7 +552,7 @@ else
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/api/reports/overviewBySuite/${blink_apikey}?suiteId=${test_suite_id}</stringProp>
+          <stringProp name="HTTPSampler.path">/api/reports/overviewBySuite/${blink_apikey}/${test_suite_id}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -577,7 +583,7 @@ else
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/api/reports/overviewBySuite/${blink_apikey}?suiteId=${test_suite_id}?startDate=${start_date}</stringProp>
+          <stringProp name="HTTPSampler.path">/api/reports/overviewBySuite/${blink_apikey}/${test_suite_id}?startDate=${start_date}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -608,7 +614,7 @@ else
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/api/reports/overviewBySuite/${blink_apikey}?suiteId=${test_suite_id}?startDate=${start_date}&amp;endDate=${end_date}</stringProp>
+          <stringProp name="HTTPSampler.path">/api/reports/overviewBySuite/${blink_apikey}/${test_suite_id}?startDate=${start_date}&amp;endDate=${end_date}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -639,7 +645,7 @@ else
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/api/reports/suites/${blink_apikey}</stringProp>
+          <stringProp name="HTTPSampler.path">/api/reports/suites/${blink_apikey}/${start_date}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -647,6 +653,7 @@ else
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="TestPlan.comments">Obrigatório uso do parâmetro &quot;startDate&quot;</stringProp>
         </HTTPSamplerProxy>
         <hashTree>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
@@ -660,7 +667,7 @@ else
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Suites (startDate)" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Suites (startDate)" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
@@ -691,7 +698,7 @@ else
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Suites (startDate endDate)" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Suites (startDate endDate)" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
@@ -732,7 +739,7 @@ else
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/api/reports/suitesByDevice/${blink_apikey}?deviceId=${razr_d1_id}</stringProp>
+          <stringProp name="HTTPSampler.path">/api/reports/suitesByDevice/${blink_apikey}/${razr_d1_id}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -763,7 +770,7 @@ else
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/api/reports/suitesByDevice/${blink_apikey}?deviceId=${razr_d1_id}?startDate=${start_date}</stringProp>
+          <stringProp name="HTTPSampler.path">/api/reports/suitesByDevice/${blink_apikey}/${razr_d1_id}?startDate=${start_date}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -794,7 +801,7 @@ else
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/api/reports/suitesByDevice/${blink_apikey}?deviceId=${razr_d1_id}?startDate=${start_date}&amp;endDate=${end_date}</stringProp>
+          <stringProp name="HTTPSampler.path">/api/reports/suitesByDevice/${blink_apikey}/${razr_d1_id}?startDate=${start_date}&amp;endDate=${end_date}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -945,17 +952,8 @@ else
             <intProp name="Assertion.test_type">16</intProp>
           </ResponseAssertion>
           <hashTree/>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-            <collectionProp name="Asserion.test_strings">
-              <stringProp name="-1867169789">success</stringProp>
-            </collectionProp>
-            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-            <boolProp name="Assertion.assume_success">false</boolProp>
-            <intProp name="Assertion.test_type">20</intProp>
-          </ResponseAssertion>
-          <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Device por suite (startDate)" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Device por suite (startDate)" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
@@ -986,17 +984,8 @@ else
             <intProp name="Assertion.test_type">16</intProp>
           </ResponseAssertion>
           <hashTree/>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-            <collectionProp name="Asserion.test_strings">
-              <stringProp name="-1867169789">success</stringProp>
-            </collectionProp>
-            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-            <boolProp name="Assertion.assume_success">false</boolProp>
-            <intProp name="Assertion.test_type">20</intProp>
-          </ResponseAssertion>
-          <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Device por suite (startDate endDate)" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Device por suite (startDate endDate)" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
@@ -1025,15 +1014,6 @@ else
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
             <intProp name="Assertion.test_type">16</intProp>
-          </ResponseAssertion>
-          <hashTree/>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-            <collectionProp name="Asserion.test_strings">
-              <stringProp name="-1867169789">success</stringProp>
-            </collectionProp>
-            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-            <boolProp name="Assertion.assume_success">false</boolProp>
-            <intProp name="Assertion.test_type">20</intProp>
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
@@ -1108,7 +1088,7 @@ else
               </elementProp>
               <elementProp name="deviceList" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${razr_d1_id}, ${galaxy_s3_mini_id}, ${galaxy_s3_id}, ${xperia_id}</stringProp>
+                <stringProp name="Argument.value">${razr_d1_id}, ${galaxy_note_2_id}, ${galaxy_s3_id}, ${galaxy_s2_lite_id}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">deviceList</stringProp>
@@ -1183,7 +1163,7 @@ else
               </elementProp>
               <elementProp name="devices" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${galaxy_s2_lite_id}</stringProp>
+                <stringProp name="Argument.value">${galaxy_note_2_id}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">devices</stringProp>
@@ -1258,7 +1238,7 @@ else
               </elementProp>
               <elementProp name="devices" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${galaxy_s2_lite_id}, ${galaxy_s3_mini_id}, ${galaxy_s3_id}, ${xperia_id}</stringProp>
+                <stringProp name="Argument.value">${razr_d1_id}, ${galaxy_note_2_id}, ${galaxy_s3_id}, ${galaxy_s2_lite_id}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">devices</stringProp>
@@ -1291,6 +1271,12 @@ else
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree/>
         <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
@@ -1324,12 +1310,6 @@ else
           </objProp>
           <stringProp name="filename"></stringProp>
         </ResultCollector>
-        <hashTree/>
-        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
-          <boolProp name="displayJMeterProperties">false</boolProp>
-          <boolProp name="displayJMeterVariables">true</boolProp>
-          <boolProp name="displaySystemProperties">false</boolProp>
-        </DebugSampler>
         <hashTree/>
       </hashTree>
     </hashTree>
